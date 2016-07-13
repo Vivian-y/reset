@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/* line 2, common.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+/* line 7, common.scss */
+li {
+  list-style: none; }
+
+/* line 10, common.scss */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: #fff; }
+
+/* line 14, common.scss */
+body, html, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 19, common.scss */
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+/* line 23, common.scss */
+.header {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #F5AFAC;
+  text-align: center;
+  line-height: 50px;
+  position: relative; }
+  /* line 30, common.scss */
+  .header a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: url("../img/03.jpg") no-repeat center;
+    background-size: 50%;
+    font-size: 0; }
+
+/* line 41, common.scss */
+.main {
+  background: #F6514B;
+  -webkit-flex-grow: 1;
+  position: relative; }
+  /* line 46, common.scss */
+  .main .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    background: url("../img/img15.png") no-repeat;
+    background-size: 100% 100%; }
+    /* line 57, common.scss */
+    .main .content:after {
+      content: "";
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      background: url("../img/vege.png") no-repeat center;
+      background-size: contain;
+      left: -20px;
+      bottom: 0; }
+
+/* line 70, common.scss */
+.btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 120px;
+  height: 50px;
+  background: url("../img/img8.png") no-repeat 5px;
+  background-size: cover;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700; }
+  /* line 82, common.scss */
+  .btn a {
+    color: #B00600; }
+
+/*--------弹出框-------*/
+/* line 87, common.scss */
+.dialog {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0; }
+  /* line 94, common.scss */
+  .dialog .box {
+    position: absolute;
+    background: white;
+    width: 80%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    /* line 104, common.scss */
+    .dialog .box .top {
+      height: 80%;
+      background: #FFF3BF;
+      line-height: 30px;
+      position: relative; }
+      /* line 109, common.scss */
+      .dialog .box .top span {
+        font-size: 0; }
+        /* line 111, common.scss */
+        .dialog .box .top span:nth-child(1) {
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 40px;
+          background: url("../img/img2.png") no-repeat center;
+          background-size: 100%;
+          z-index: 1; }
+        /* line 123, common.scss */
+        .dialog .box .top span:nth-child(2) {
+          width: 120px;
+          height: 30px;
+          position: absolute;
+          left: 20px;
+          top: 40px;
+          background: url("../img/img9.png") no-repeat center;
+          background-size: 100%; }
+        /* line 132, common.scss */
+        .dialog .box .top span:nth-child(3) {
+          width: 80px;
+          height: 40px;
+          position: absolute;
+          right: 20px;
+          top: 80px;
+          background: url("../img/img10.png") no-repeat center;
+          background-size: 100%; }
+      /* line 142, common.scss */
+      .dialog .box .top h3 {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0 30px;
+        bottom: 10px; }
+    /* line 153, common.scss */
+    .dialog .box .bottom {
+      height: 20%;
+      background: #FAEAA4;
+      position: relative; }
+      /* line 157, common.scss */
+      .dialog .box .bottom .dialog-btn {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+  /* line 166, common.scss */
+  .dialog .close {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+    background: url("../img/img12.png") no-repeat center;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700px;
+    color: #fff;
+    background-size: contain; }
+
+/*-----------隐藏-----------*/
+/* line 181, common.scss */
+.hide {
+  display: none; }
+
+/*-------------前三页的li-------------*/
+/* line 185, common.scss */
+.li {
+  width: 82px;
+  height: 30px;
+  border: 1px solid #D3CCAB;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 28px;
+  color: #5F5D52;
+  margin: 10px;
+  margin-top: 50px; }
+
+/* line 196, common.scss */
+.li-bg {
+  background: #F6514B;
+  color: white; }
+
+/*-----------------60道题的选择--------------*/
+/* line 201, common.scss */
+.span {
+  width: 62px;
+  height: 30px;
+  border: 1px solid #D3CCAB;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 28px;
+  color: #5F5D52;
+  margin: 10px;
+  margin-top: 50px; }
+
+/* line 212, common.scss */
+.span-bg {
+  background: #F6514B;
+  color: white; }
+
+/*# sourceMappingURL=common.css.map */
