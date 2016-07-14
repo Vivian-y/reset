@@ -1,0 +1,393 @@
+@charset "UTF-8";
+/* line 2, common.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+/* line 7, common.scss */
+li {
+  list-style: none; }
+
+/* line 10, common.scss */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: #fff; }
+
+/* line 14, common.scss */
+body, html, .container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 19, common.scss */
+.container {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+/* line 23, common.scss */
+.header {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #F5AFAC;
+  text-align: center;
+  line-height: 50px;
+  position: relative; }
+  /* line 30, common.scss */
+  .header a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: url("../img/03.jpg") no-repeat center;
+    background-size: 50%;
+    font-size: 0; }
+
+/* line 41, common.scss */
+.main {
+  background: #F6514B;
+  -webkit-flex-grow: 1;
+  position: relative;
+  overflow: hidden; }
+  /* line 47, common.scss */
+  .main .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    background: url("../img/img15.png") no-repeat;
+    background-size: 100% 100%; }
+    /* line 58, common.scss */
+    .main .content:after {
+      content: "";
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      background: url("../img/vege.png") no-repeat center;
+      background-size: contain;
+      left: -20px;
+      bottom: 0; }
+
+/* line 71, common.scss */
+.btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 120px;
+  height: 50px;
+  background: url("../img/img8.png") no-repeat 5px;
+  background-size: cover;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 700; }
+  /* line 83, common.scss */
+  .btn a {
+    color: #B00600; }
+
+/*--------弹出框-------*/
+/* line 88, common.scss */
+.dialog {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0; }
+  /* line 95, common.scss */
+  .dialog .box {
+    position: absolute;
+    background: white;
+    width: 80%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    /* line 105, common.scss */
+    .dialog .box .top {
+      height: 80%;
+      background: #FFF3BF;
+      line-height: 30px;
+      position: relative; }
+      /* line 110, common.scss */
+      .dialog .box .top span {
+        font-size: 0; }
+        /* line 112, common.scss */
+        .dialog .box .top span:nth-child(1) {
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          top: 40px;
+          background: url("../img/img2.png") no-repeat center;
+          background-size: 100%;
+          z-index: 1; }
+        /* line 124, common.scss */
+        .dialog .box .top span:nth-child(2) {
+          width: 120px;
+          height: 30px;
+          position: absolute;
+          left: 20px;
+          top: 40px;
+          background: url("../img/img9.png") no-repeat center;
+          background-size: 100%; }
+        /* line 133, common.scss */
+        .dialog .box .top span:nth-child(3) {
+          width: 80px;
+          height: 40px;
+          position: absolute;
+          right: 20px;
+          top: 80px;
+          background: url("../img/img10.png") no-repeat center;
+          background-size: 100%; }
+      /* line 143, common.scss */
+      .dialog .box .top h3 {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding: 0 30px;
+        bottom: 10px; }
+    /* line 154, common.scss */
+    .dialog .box .bottom {
+      height: 20%;
+      background: #FAEAA4;
+      position: relative; }
+      /* line 158, common.scss */
+      .dialog .box .bottom .dialog-btn {
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto; }
+  /* line 167, common.scss */
+  .dialog .close {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+    background: url("../img/img12.png") no-repeat center;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700px;
+    color: #fff;
+    background-size: contain; }
+
+/*-----------隐藏-----------*/
+/* line 182, common.scss */
+.hide {
+  display: none; }
+
+/*-------------前三页的li-------------*/
+/* line 186, common.scss */
+.li {
+  width: 82px;
+  height: 30px;
+  border: 1px solid #D3CCAB;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 28px;
+  color: #5F5D52;
+  margin: 10px;
+  margin-top: 50px; }
+
+/* line 197, common.scss */
+.li-bg {
+  background: #F6514B;
+  color: white; }
+
+/*-----------------60道题的选择--------------*/
+/* line 202, common.scss */
+.span {
+  width: 62px;
+  height: 30px;
+  border: 1px solid #D3CCAB;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 28px;
+  color: #5F5D52;
+  margin: 10px;
+  margin-top: 50px; }
+
+/* line 213, common.scss */
+.span-bg {
+  background: #F6514B;
+  color: white; }
+
+/* line 2, index-7.scss */
+.seven {
+  background: #fff; }
+  /* line 4, index-7.scss */
+  .seven .seven-main {
+    width: 100%;
+    height: 0;
+    background: #F9F9F9;
+    overflow-y: scroll; }
+    /* line 9, index-7.scss */
+    .seven .seven-main .top-show {
+      background: #F6514B;
+      padding: 20px 10px;
+      color: #fff;
+      margin-bottom: 10px; }
+      /* line 14, index-7.scss */
+      .seven .seven-main .top-show .change-span {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        background: url("../img/5.jpg") no-repeat center;
+        background-size: 40%;
+        font-size: 0; }
+      /* line 25, index-7.scss */
+      .seven .seven-main .top-show p:first-child {
+        width: 100%;
+        line-height: 25px;
+        font-size: 16px; }
+      /* line 30, index-7.scss */
+      .seven .seven-main .top-show p.p {
+        font-size: 20px; }
+    /* line 36, index-7.scss */
+    .seven .seven-main .top-hide {
+      width: 100%;
+      height: 60px;
+      background: #F6514B;
+      color: #fff;
+      position: relative; }
+      /* line 42, index-7.scss */
+      .seven .seven-main .top-hide p {
+        width: 100%;
+        line-height: 60px;
+        font-size: 16px;
+        text-align: center; }
+      /* line 48, index-7.scss */
+      .seven .seven-main .top-hide .border-span {
+        width: 8px;
+        height: 8px;
+        border-bottom: 8px solid #fff;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        position: absolute;
+        bottom: -1px;
+        left: 48%; }
+    /* line 59, index-7.scss */
+    .seven .seven-main .ol-hide {
+      background: #fff;
+      margin-bottom: 10px; }
+      /* line 62, index-7.scss */
+      .seven .seven-main .ol-hide ol {
+        width: 90%;
+        padding-top: 10px;
+        margin: 0 auto; }
+        /* line 66, index-7.scss */
+        .seven .seven-main .ol-hide ol li {
+          line-height: 25px;
+          font-size: 14px; }
+      /* line 71, index-7.scss */
+      .seven .seven-main .ol-hide .show {
+        text-align: center;
+        line-height: 40px;
+        color: #666;
+        width: 100%;
+        height: 40px;
+        border: 1px solid #F7F7F7;
+        border-left: none;
+        border-right: none; }
+        /* line 80, index-7.scss */
+        .seven .seven-main .ol-hide .show span {
+          font-size: 14px; }
+      /* line 84, index-7.scss */
+      .seven .seven-main .ol-hide ul {
+        width: 90%;
+        margin: 10px auto; }
+        /* line 87, index-7.scss */
+        .seven .seven-main .ol-hide ul li {
+          line-height: 25px;
+          font-size: 14px; }
+          /* line 90, index-7.scss */
+          .seven .seven-main .ol-hide ul li span {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #000;
+            display: inline-block;
+            margin: 0 5px 0 0px; }
+        /* line 100, index-7.scss */
+        .seven .seven-main .ol-hide ul li:nth-of-type(1) {
+          line-height: 30px;
+          font-size: 14px;
+          font-weight: 600; }
+          /* line 104, index-7.scss */
+          .seven .seven-main .ol-hide ul li:nth-of-type(1) span {
+            width: 10px;
+            margin: 0 5px 0 0px;
+            height: 10px;
+            background: url(../img/pic12-1.png) no-repeat;
+            background-size: contain;
+            display: inline-block; }
+    /* line 117, index-7.scss */
+    .seven .seven-main .ul .h6 {
+      height: 60px;
+      line-height: 60px;
+      color: #f6514b;
+      font-size: 16px;
+      padding: 0 20px;
+      border: 1px solid #eee;
+      border-left: none;
+      border-right: none;
+      background: #fff; }
+      /* line 127, index-7.scss */
+      .seven .seven-main .ul .h6 span {
+        background: url(../img/pic16-1.png) no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        float: right;
+        margin-top: 20px; }
+    /* line 138, index-7.scss */
+    .seven .seven-main .ul li:nth-child(2) .h6 {
+      border-top: none; }
+    /* line 143, index-7.scss */
+    .seven .seven-main .pic {
+      width: 90%;
+      display: -webkit-flex;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+      /* line 148, index-7.scss */
+      .seven .seven-main .pic dl {
+        -webkit-flex-grow: 1;
+        background: #fbfbfb;
+        margin-right: 10px;
+        color: #333; }
+        /* line 152, index-7.scss */
+        .seven .seven-main .pic dl:nth-child(2) {
+          margin-right: 0px; }
+        /* line 157, index-7.scss */
+        .seven .seven-main .pic dl dt img {
+          width: 100%; }
+        /* line 161, index-7.scss */
+        .seven .seven-main .pic dl dd {
+          text-align: center;
+          font-size: 12px;
+          line-height: 30px; }
+    /* line 168, index-7.scss */
+    .seven .seven-main .eat {
+      margin: 10px 0; }
+    /* line 171, index-7.scss */
+    .seven .seven-main .notEat {
+      margin: 10px 0; }
+
+/*# sourceMappingURL=index-7.css.map */

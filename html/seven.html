@@ -1,1 +1,96 @@
 <!-- 结果 -->
+<header class="header">
+	<a class='back' href='#/six'>返回</a>
+	<h2>平和质</h2>
+</header>
+<div class="main seven">
+	<div class="seven-main">
+		<div class="top-show" ng-show='falgTop1'>
+			<a class='change-span' ng-click='change_span()'>显示</a>
+			<p>您的体质为：</p>
+			<p class="p" ng-repeat='x in json.result'>{{x.name}}</p>
+		</div>
+		<div class="top-hide" ng-hide='falgTop2'>
+			<p>您的体质为：<span ng-repeat='x in json.result'>{{x.name}}</span></p>
+			<span class="border-span"></span>
+		</div>
+		<div class="ol-hide" ng-hide='flag_ol'>
+			<ol>
+				<li ng-repeat='x in json.result[0].feature'>总体特征：<span>{{x}}</span></li>
+			</ol>
+			<p class='show' ng-click='show()' ng-show='p_show'>阅读全文<span>∨</span></p>
+			<div ng-hide='flag_ul'>
+				<ul>
+					<li><span></span>平和质，是什么意思？</li>
+					<li ng-repeat='x in json.result[0].mean'><span></span>{{x}}</li>
+				</ul>
+				<ul>
+					<li><span></span>平和质还有这些优点</li>
+					<li ng-repeat='x in json.result[0].goodness'><span></span>{{x}}</li>
+				</ul>
+				 <ul>
+					<li><span></span>也许你不是真平和质</li>
+					<li ng-repeat='x in json.result[0].if'><span></span>{{x}}</li>
+				</ul>
+				<ul>
+					<li><span></span>想改善怎么办</li>
+					<li ng-repeat='x in json.result[0].how'><span></span>{{x}}</li>
+				</ul>
+			</div> 
+		</div>
+		<div class="ul">
+			<li>
+				<h6 class='h6'>宜食<span class='right' ng-click='eat()'></span></h6>
+				<div class="eat" ng-show='flag_eat'>
+					<div class='pic'>
+						<dl>
+							<dt>
+								<a href=""><img src="img/pic2-1.png" alt=""></a>
+							</dt>
+							<dd>600元套餐新鲜水果</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href=""><img src="img/pic2-1.png" alt=""></a>
+							</dt>
+							<dd>600元套餐新鲜水果</dd>
+						</dl>
+					</div>
+					<div class='pic'>
+						<dl>
+							<dt>
+								<a href=""><img src="img/pic2-1.png" alt=""></a>
+							</dt>
+							<dd>600元套餐新鲜水果</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href=""><img src="img/pic2-1.png" alt=""></a>
+							</dt>
+							<dd>600元套餐新鲜水果</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li>
+				<h6 class='h6'>不宜食<span class='right' ng-click='notEat()'></span></h6>
+				<div class="notEat" ng-show='flag_notEat'>
+					<div class='pic'>
+						<dl>
+							<dt>
+								<a href=""><img src="img/pic2-1.png" alt=""></a>
+							</dt>
+							<dd>600元套餐新鲜水果</dd>
+						</dl>
+						<dl>
+							<dt>
+								<a href=""><img src="img/pic2-1.png" alt=""></a>
+							</dt>
+							<dd>600元套餐新鲜水果</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+		</div>
+	</div>
+</div>
